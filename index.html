@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protótipo - Organograma Corporativo Irmen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-content">
+      <div class="logo-placeholder">
+  <img src="img/logo.png" alt="Logo da empresa" class="logo-img">
+</div>
+      <div class="header-text">
+        <h1>Organograma Corporativo</h1>
+        <p>Protótipo com objetivo de apresentar opção de organograma da Irmen SP/RJ</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Estrutura Organizacional</h2>
+        <p>
+          Abaixo está a visualização principal do organograma corporativo com os colaboradores
+          conectados hierarquicamente. Logo após, há uma visão complementar em formato escalável
+          para suportar grandes quantidades de colaboradores.
+        </p>
+      </div>
+    </section>
+
+    <!-- ORGANOGRAMA VISUAL COM CONEXÕES -->
+    <section class="visual-org-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Organograma Visual</h2>
+          <p>
+            Visualização hierárquica com cards conectados entre os colaboradores.
+          </p>
+        </div>
+
+        <div class="visual-org-wrapper">
+          <div id="visualOrgChart" class="visual-org-chart"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTE INFERIOR: LISTA ESCALÁVEL -->
+    <section class="directory-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Visão Completa da Estrutura</h2>
+          <p>
+            Área complementar preparada para muitos colaboradores, com busca, filtro e separação por níveis.
+          </p>
+        </div>
+
+        <div class="controls">
+          <div class="control-group">
+            <label for="searchInput">Buscar colaborador</label>
+            <input type="text" id="searchInput" placeholder="Digite nome, função ou setor" />
+          </div>
+
+          <div class="control-group">
+            <label for="sectorFilter">Filtrar por setor</label>
+            <select id="sectorFilter">
+              <option value="todos">Todos os setores</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="summary-grid">
+          <div class="summary-card">
+            <span>Total exibido</span>
+            <strong id="totalEmployees">0</strong>
+          </div>
+
+          <div class="summary-card">
+            <span>Setores</span>
+            <strong id="totalSectors">0</strong>
+          </div>
+
+          <div class="summary-card">
+            <span>Níveis</span>
+            <strong id="totalLevels">0</strong>
+          </div>
+        </div>
+
+        <div id="orgContainer" class="org-container"></div>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Informações Importantes</h2>
+          <p>Conteúdo fictício apenas para demonstração visual do protótipo.</p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-box">
+            <h3>Objetivo</h3>
+            <p>
+              Demonstrar uma estrutura organizacional clara, moderna e visualmente compreensível,
+              permitindo futura adaptação com dados reais da empresa.
+            </p>
+          </article>
+
+          <article class="info-box">
+            <h3>Aplicação</h3>
+            <p>
+              O modelo poderá ser usado para apresentação institucional, comunicação interna,
+              integração de novos colaboradores e documentação da estrutura hierárquica.
+            </p>
+          </article>
+
+          <article class="info-box">
+            <h3>Observação</h3>
+            <p>
+              Todos os nomes, funções e setores utilizados neste protótipo são fictícios e têm finalidade exclusivamente demonstrativa.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="https://irmen.com.br/" class="">Site Oficial</a>
+      <p>Unidade Indaiatuba / SP: Rodovia Engenheiro Ermenio de Oliveira Penteado, 59 - Helvetia, Indaiatuba - SP, 13.337-300</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
