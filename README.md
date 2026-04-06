@@ -71,7 +71,7 @@ PortalIrmen/
 
 O projeto está disponível via GitHub Pages:
 
-👉 (Adicionar link aqui após publicação)
+👉 https://ignacio-sens.github.io/PortalIrmen/
 
 ---
 
